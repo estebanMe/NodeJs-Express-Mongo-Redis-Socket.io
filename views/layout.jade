@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title photo image
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/public/css/app.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js")
+        script(src="../public/js/handlebars-v4.0.11.js")
+           
+    body
+      nav(class="large-padding white-text")
+        ul 
+          li 
+            a(href="/app") Inicio
+          li 
+            a(href="/app/imagenes/new") Subir imagen
+          li 
+            a(href="/app/imagenes") Mis imagenes
+      block contenido 

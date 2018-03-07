@@ -1,0 +1,13 @@
+extends ../../layout.jade
+block contenido
+ div(class="container")
+    h1 Subir nueva imagen
+    form(action="/app/imagenes", method="POST" enctype="multipart/form-data")
+        div(class="form-group")
+            label(for="title") Título
+            input(type="text",name="title",placeholder="title de la imagen...",id="title",class="form-control")
+        div(class="form-group")
+            label(for="archivo") Imagen
+            input(type="file",name="archivo",id="archivo",class="form-control")
+        div(class="form-group")
+            input(type="submit" value="Guardar" class="btn btn-info")    
